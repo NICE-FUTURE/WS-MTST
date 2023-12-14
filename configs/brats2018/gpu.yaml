@@ -1,0 +1,10 @@
+parent: ./configs/brats2018/base.yaml
+
+dataset:
+  root_dir: /mnt/d/dataset/BraTS2018
+
+train:
+  num_workers: 4
+
+val:
+  num_workers: 4

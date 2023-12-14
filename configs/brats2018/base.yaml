@@ -1,0 +1,42 @@
+dataset:
+  txt_dir: ./data/brats2018/
+  num_channels: 4
+  num_classes: 4
+  img_size: 160
+
+pretrain:
+  stage: train
+  learning_rate: 1e-3
+  epochs: 300
+  log_step: 20
+  batch_size: 64
+  warmup_epochs: 20
+
+train:
+  stage: train
+  batch_size: 48
+  log_step: 100
+  epochs: 100
+  no_seg_loss: 40
+  use_aggregation_loss: True
+  use_overlapping_loss: True
+
+val:
+  stage: val
+  batch_size: 8
+  log_step: 500
+
+test:
+  stage: all
+  batch_size: 1
+  log_step: 500
+  num_workers: 4
+
+optimizer:
+  learning_rate: 1e-5
+  weight_decay: 0.01
+  warmup_epochs: 10
+
+cam:
+  bkg_score: 0.45
+  scales: [1, 0.5, 1.5]
