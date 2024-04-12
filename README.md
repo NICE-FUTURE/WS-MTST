@@ -7,6 +7,10 @@ pip install -r requirements.txt
 bash run.sh
 ```
 
+## Data preparation
+
+Please refer to <a href="https://github.com/Merofine/BrainTumorSegmentation/blob/main/data/BraTS2Dpreprocessing-master/GetTestingSetsFrom2019.ipynb" target="_blank">this code</a>.
+
 ## Acknowledgements
 Our code is based on <a href="https://github.com/NVlabs/SegFormer" target="_blank">SegFormer</a> and <a href="https://github.com/lightly-ai/lightly" target="_blank">lightly</a>.
 
